@@ -225,23 +225,27 @@ platformio run --target upload
 
 ### 系统架构图
 
-![系统架构图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20access%20control%20system%20architecture%20diagram%20with%20hardware%2C%20firmware%2C%20backend%20and%20frontend%20components%2C%20technical%20drawing%2C%20blue%20theme&image_size=landscape_16_9)
+![系统架构图](pictureshow/00.png)
 
 ### 硬件设计图
 
-![硬件设计图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20access%20control%20hardware%20design%20with%20ESP32%2C%20fingerprint%20sensor%2C%20RFID%20reader%2C%20camera%20and%20keypad%2C%20circuit%20diagram%2C%20technical%20drawing&image_size=landscape_16_9)
+![硬件设计图](pictureshow/01.png)
 
 ### 门禁设备效果图
 
-![门禁设备效果图](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20access%20control%20device%20with%20fingerprint%20scanner%2C%20RFID%20reader%2C%20camera%20and%20keypad%2C%20modern%20design%2C%20wall-mounted%20device&image_size=landscape_4_3)
+![门禁设备效果图](pictureshow/02.png)
 
 ### 管理界面效果图
 
-![管理界面效果图](pictureshow\00.png)
+![管理界面效果图](pictureshow/03.png)
 
 ### 数据分析界面
 
-![数据分析界面](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20access%20control%20data%20analytics%20dashboard%20with%20charts%20and%20statistics%2C%20user%20access%20patterns%2C%20device%20status%2C%20modern%20data%20visualization&image_size=landscape_16_9)
+![数据分析界面](pictureshow/04.png)
+
+### 系统流程图
+
+![系统流程图](pictureshow/05.png)
 
 ## 项目文档
 
