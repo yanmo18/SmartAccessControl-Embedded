@@ -1,0 +1,26 @@
+Component ID,Component Name,Specification,Quantity,Supplier,Price,Notes
+C001,ESP32-WROOM-32,Dual-core 32-bit, 240MHz, 520KB RAM, 4MB Flash,1,Amazon,$10.99,Main controller
+C002,LM2596 DC-DC Converter,Input: 12V, Output: 5V/3A,1,Amazon,$3.99,Power supply
+C003,AMS1117-3.3V,Voltage regulator, 3.3V/1A,1,Amazon,$1.99,Power supply
+C004,MFRC522 RFID Module,13.56MHz, SPI interface,1,Amazon,$5.99,Card reader
+C005,AS608 Fingerprint Module,500DPI, UART interface,1,Amazon,$12.99,Fingerprint reader
+C006,OV2640 Camera Module,2MP, I2C+SPI interface,1,Amazon,$8.99,Facial recognition
+C007,4x4 Matrix Keypad,Membrane keypad,1,Amazon,$2.99,Password input
+C008,Electromagnetic Lock,12V, 2A,1,Amazon,$15.99,Door lock
+C009,Reed Switch,Door magnetic sensor,1,Amazon,$1.99,Door status
+C010,Active Buzzer,5V,1,Amazon,$0.99,Alarm
+C011,LED Module,RGB LED,1,Amazon,$1.49,Status indicator
+C012,18650 Battery,3.7V 2000mAh,1,Amazon,$4.99,Backup power
+C013,Battery Charger Module,TP4056,1,Amazon,$1.99,Battery charging
+C014,MAX485 Module,RS485 transceiver,1,Amazon,$2.99,Communication
+C015,LAN8720 Module,Ethernet PHY,1,Amazon,$6.99,Ethernet
+C016,Relay Module,5V, 2-channel,1,Amazon,$2.99,Load control
+C017,PCB Board,Custom design,1,Local PCB Shop,$15.00,Main board
+C018,Connectors,Various types,10,Amazon,$5.99,Various connections
+C019,Resistors,Various values,20,Amazon,$2.99,Various uses
+C020,Capacitors,Various values,20,Amazon,$2.99,Various uses
+C021,Diodes,1N4007,5,Amazon,$1.99,Various uses
+C022,Transistors,2N2222,5,Amazon,$1.99,Various uses
+C023,Fuse,12V 3A,2,Amazon,$1.99,Overcurrent protection
+C024,Power Jack,DC 12V,1,Amazon,$1.49,Power input
+C025,Enclosure,Custom design,1,Local Supplier,$20.00,Housing

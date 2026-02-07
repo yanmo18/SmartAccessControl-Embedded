@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能门禁管理控制平台</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 登录页面 -->
+    <div id="login-page" class="page active">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>智能门禁管理控制平台</h1>
+                <p>请登录以访问系统</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-primary">登录</button>
+            </form>
+            <div id="login-message" class="message"></div>
+        </div>
+    </div>
+
+    <!-- 仪表盘页面 -->
+    <div id="dashboard-page" class="page">
+        <div class="dashboard-header">
+            <div class="logo">
+                <h1>智能门禁管理控制平台</h1>
+            </div>
+            <div class="user-info">
+                <span id="current-user">管理员</span>
+                <button id="logout-btn" class="btn-secondary">退出登录</button>
+            </div>
+        </div>
+        
+        <div class="dashboard-content">
+            <div class="dashboard-sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#dashboard" class="menu-item active" data-target="dashboard-section">
+                        <i class="fas fa-chart-line"></i> 仪表盘
+                    </a></li>
+                    <li><a href="#devices" class="menu-item" data-target="devices-section">
+                        <i class="fas fa-microchip"></i> 设备管理
+                    </a></li>
+                    <li><a href="#users" class="menu-item" data-target="users-section">
+                        <i class="fas fa-users"></i> 用户管理
+                    </a></li>
+                    <li><a href="#records" class="menu-item" data-target="records-section">
+                        <i class="fas fa-clipboard-list"></i> 访问记录
+                    </a></li>
+                    <li><a href="#settings" class="menu-item" data-target="settings-section">
+                        <i class="fas fa-cog"></i> 系统设置
+                    </a></li>
+                </ul>
+            </div>
+            
+            <div class="dashboard-main">
+                <!-- 仪表盘部分 -->
+                <div id="dashboard-section" class="section active">
+                    <div class="section-header">
+                        <h2>系统概览</h2>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-door-open"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>今日访问</h3>
+                                <p id="today-access">0</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>在线设备</h3>
+                                <p id="online-devices">0</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>异常事件</h3>
+                                <p id="alarm-events">0</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>注册用户</h3>
+                                <p id="registered-users">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-activity">
+                        <h3>最近活动</h3>
+                        <div class="activity-list" id="activity-list">
+                            <!-- 活动项将通过JavaScript动态添加 -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 设备管理部分 -->
+                <div id="devices-section" class="section">
+                    <div class="section-header">
+                        <h2>设备管理</h2>
+                        <button class="btn-primary">添加设备</button>
+                    </div>
+                    <div class="devices-list" id="devices-list">
+                        <!-- 设备项将通过JavaScript动态添加 -->
+                    </div>
+                </div>
+                
+                <!-- 用户管理部分 -->
+                <div id="users-section" class="section">
+                    <div class="section-header">
+                        <h2>用户管理</h2>
+                        <button class="btn-primary">添加用户</button>
+                    </div>
+                    <div class="users-list" id="users-list">
+                        <!-- 用户项将通过JavaScript动态添加 -->
+                    </div>
+                </div>
+                
+                <!-- 访问记录部分 -->
+                <div id="records-section" class="section">
+                    <div class="section-header">
+                        <h2>访问记录</h2>
+                        <div class="filter-options">
+                            <input type="date" id="record-date">
+                            <button class="btn-secondary">查询</button>
+                        </div>
+                    </div>
+                    <div class="records-list" id="records-list">
+                        <!-- 记录项将通过JavaScript动态添加 -->
+                    </div>
+                </div>
+                
+                <!-- 系统设置部分 -->
+                <div id="settings-section" class="section">
+                    <div class="section-header">
+                        <h2>系统设置</h2>
+                    </div>
+                    <div class="settings-form">
+                        <!-- 设置表单将通过JavaScript动态添加 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
