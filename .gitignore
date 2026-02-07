@@ -1,0 +1,80 @@
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python虚拟环境
+.venv/
+venv/
+env/
+
+# 编译产物
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 依赖包
+node_modules/
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+tmp/
+temp/
+
+# 构建文件
+build/
+dist/
+*.egg-info/
+
+# 数据库文件
+*.db
+*.sqlite3
+
+# 硬件设计文件
+smart-access-control/hardware/pcb/*
+!smart-access-control/hardware/pcb/README.md
+
+# 固件构建文件
+smart-access-control/firmware/.pio/
+smart-access-control/firmware/build/
+
+# 后端构建文件
+smart-access-control/backend/.pytest_cache/
+smart-access-control/backend/coverage/
+
+# 前端构建文件
+smart-access-control/frontend/build/
+smart-access-control/frontend/dist/
+
+# Docker文件
+docker-compose.override.yml
+
+# 文档构建文件
+docs/build/
+
+# 测试文件
+.coverage
+.tox/
+.nox/
+
+# 其他
+*.bak
+*.tmp
+*.old
+*.backup
