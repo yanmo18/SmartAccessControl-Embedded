@@ -223,29 +223,29 @@ platformio run --target upload
 
 ## 图片展示
 
-### 系统架构图
+### 系统概览图
 
-![系统架构图](pictureshow/00.png)
+![系统概览图](pictureshow/03.png)
 
-### 硬件设计图
+### 设备管理图
 
-![硬件设计图](pictureshow/01.png)
+![设备管理图](pictureshow/04.png)
 
-### 门禁设备效果图
+### 用户管理图
 
-![门禁设备效果图](pictureshow/02.png)
+![用户管理图](pictureshow/01.png)
 
-### 管理界面效果图
+### 系统设置界面效果图
 
-![管理界面效果图](pictureshow/03.png)
+![管理界面效果图](pictureshow/00.png)
 
-### 数据分析界面
+### 日期选择界面
 
-![数据分析界面](pictureshow/04.png)
+![日期选择界面](pictureshow/05.png)
 
-### 系统流程图
+### 访问记录图
 
-![系统流程图](pictureshow/05.png)
+![访问记录图](pictureshow/02.png)
 
 ## 项目文档
 
